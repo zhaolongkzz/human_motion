@@ -80,25 +80,10 @@ rosrun human_motion motion_animation.py
 
 ## Structure
 The floder here is human\_motion.you'd better place the dataset as below.
-.
-├── Animation
-│   └── FUNCTIONS
-├── h3.6m
-│   └── dataset
-│       ├── S1
-│       ├── S11
-│       ├── S5
-│       ├── S6
-│       ├── S7
-│       ├── S8
-│       └── S9
-├── Motion
-├── Prediction
-│   ├── DataProcess
-│	└── FUNCTIONS
-├── Pre-trained
-│   ├── srnn_eating
-│   └── srnn_smoking
+
+<p align="center">
+  <img src="https://github.com/zhaolongkzz/human_motion/blob/master/images/Tree.png"><br><br>
+</p>
 
 
 ## Video
