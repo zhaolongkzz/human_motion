@@ -19,14 +19,18 @@ it well handles both short and long term forecasting. And the SRNN exhibit well 
 ## Prerequisites
 - ubuntu16.04
 - anaconda3
-  &ensp;install anaconda, click [here](http://docs.anaconda.com/anaconda/install/linux/).
+  &ensp;&ensp;(install anaconda, click [here](http://docs.anaconda.com/anaconda/install/linux/).)
 - ROS-Kinetic
-  &ensp;you can go to the official web [here](http://wiki.ros.org/kinetic/Installation/Ubuntu).
+  &ensp;&ensp;(you can go to the official web [here](http://wiki.ros.org/kinetic/Installation/Ubuntu).)
 - python=2.7
-  &ensp;with anaconda env below.
+  &ensp;&ensp;(with anaconda env below.)
 
 you can create an environment to run them.
-```conda create -n srnn python=2.7```
+
+```bash
+conda create -n srnn python=2.7
+```
+
 the package you need to install:
 - numpy>=1.8.1
 - theano=0.8.2
