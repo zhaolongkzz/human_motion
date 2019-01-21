@@ -122,7 +122,7 @@ Structural-RNN make a connection between nodes and edges, and every one is train
 
 ### srnn_smoking in RViz
 <p align="center">
-  <img src="https://github.com/zhaolongkzz/human_motion/blob/master/images/rviz_smoking.mp4"><br><br>
+  <img src="https://github.com/zhaolongkzz/human_motion/blob/master/images/rviz.gif"><br><br>
 </p>
 
 ## FAQ
