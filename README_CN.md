@@ -71,46 +71,47 @@ rm h3.6m.zip
 ### 使用python
 ```bash
 cd scripts
-# train your model, it will cost you about 20 min
+# 训练数据集,可能需要花费大概20min
 python Prediction/generateMotionForecast.py srnn smoking
-# make a animation, and then it will play it automaticcally
+# 制作一个动画, 然后播放动画
 python Animation/motionAnimation.py --model srnn --action smoking
-# the result data will save with a h5df file in /Motion floder!
+# 动画的数据结果会以h5df格式保存到/Motion文件夹下
 ```
 
-### ROS
+### 使用ROS
 
-Play the animation of the motion!
+播放运动的结果!
 ```bash
 cd human_motion/scripts
 roscore
-# predict the motion, remember to open another terminal
+# 预测结果, 记得打开另外一个terminal
 rosrun human_motion motion_predicts.py srnn smoking
-# read the file and publish the msg
+# 读取文件以及发布msg信息
 rosrun human_motion motion_publisher.py srnn smoking
-# get the data, and play the animation
+# 获得数据,并且播放动画
 rosrun human_motion motion_animation.py
 ```
 
-Here you can run the ground_truth or forcast file with RViz
+可以通过RViz来运行真实值和预测值
 ```bash
 rosrun human_motion read_motion.py h3.6m/dataset/S5/smoking_1.txt
 rosrun human_motion rviz_motion.py motion:=/motion_skeleto
 ```
 
-## Structure
-The floder here is human\_motion.you'd better place the dataset as below.
+## 结构
+human\_motion文件夹下.你需要把数据集放到该文件夹下.
 
 <p align="center">
   <img src="https://github.com/zhaolongkzz/human_motion/blob/master/images/Tree.png"><br><br>
 </p>
 
-S-RNN architecture from the factor graph representation of the st-graph. The factors in the st-graph operate in a temporal manner, where at each time step the factors observe (node & edge) features and perform some computation on those features. In S-RNN, we represent each factor with an RNN. We refer the RNNs obtained from the node factors as nodeRNNs and the RNNs obtained from the edge factors as edgeRNNs. The interactions represented by the st-graph are captured through connections between the nodeRNNs and the edgeRNNs.
-**Parameter sharing and structured feature space**
+S-RNN架构来自st图的因子图表示。 st图中的因子以时间方式操作，其中在每个时间步骤中因子观察（节点和边缘）特征并对这些特征执行一些计算。 在S-RNN中，我们用RNN表示每个因子。 我们将从节点因子获得的RNN称为nodeRNN，将从边缘因子获得的RNN称为edgeRNN。 通过nodeRNN和edgeRNN之间的连接捕获由st图表示的交互。
+**参数共享和结构化特征空间**
 
-Structural-RNN make a connection between nodes and edges, and every one is trained by RNNs, so from the temporal graph, it will relate before state and the skeleto, then get a trade-off action to predict in the future.
+结构-RNN在节点和边缘之间建立连接，并且每个都由RNN训练，因此从时间图中，它将在状态和角度之前相关，然后得到权衡行为以在将来进行预测。
 
-## Video
+
+## 视频
 ### srnn_smoking
 <p align="center">
   <img src="https://github.com/zhaolongkzz/human_motion/blob/master/images/srnn_smoking.gif"><br><br>
