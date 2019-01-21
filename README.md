@@ -19,12 +19,15 @@ it well handles both short and long term forecasting. And the SRNN exhibit well 
 ## Prerequisites
 - ubuntu16.04
 - anaconda3
+  &ensp;install anaconda, click [here](http://docs.anaconda.com/anaconda/install/linux/).
 - ROS-Kinetic
+  &ensp;you can go to the official web [here](http://wiki.ros.org/kinetic/Installation/Ubuntu).
+- python=2.7
+  &ensp;with anaconda env below.
 
 you can create an environment to run them.
 ```conda create -n srnn python=2.7```
 the package you need to install:
-- python=2.7
 - numpy>=1.8.1
 - theano=0.8.2
 - matplotlib=2.2.3
@@ -84,6 +87,12 @@ rosrun human_motion motion_publisher.py srnn smoking
 rosrun human_motion motion_animation.py
 ```
 
+Here you can run the ground_truth or forcast file with RViz
+```bash
+rosrun human_motion read_motion.py h3.6m/dataset/S5/smoking_1.txt
+rosrun human_motion rviz_motion.py motion:=/motion_skeleto
+```
+
 ## Structure
 The floder here is human\_motion.you'd better place the dataset as below.
 
@@ -105,6 +114,11 @@ Structural-RNN make a connection between nodes and edges, and every one is train
 ### srnn_eating
 <p align="center">
   <img src="https://github.com/zhaolongkzz/human_motion/blob/master/images/srnn_eating.gif"><br><br>
+</p>
+
+### srnn_smoking in RViz
+<p align="center">
+  <img src="https://github.com/zhaolongkzz/human_motion/blob/master/images/rviz_smoking.mp4"><br><br>
 </p>
 
 ## FAQ
