@@ -55,7 +55,7 @@ And the Pre-trained dataset is in [here](https://drive.google.com/drive/folders/
 
 first, here you can git the code from github:
 ```bash
-git clone https://github.com/zhaolongkzz/human_motion.git
+git clone https://github.com/zhaolongkzz/human_motion
 unzip human_motion
 cd human_motion/scripts
 wget http://www.cs.stanford.edu/people/ashesh/h3.6m.zip
