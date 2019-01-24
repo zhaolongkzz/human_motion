@@ -40,6 +40,7 @@ the package you need to install:
 if you want to train it with GPU here, you should install cuda
 - cuda=8.0
 - libcudnn6_6.0.21
+**Note:** that cuda9 is not suitable for the code, please reinstall cuda8 and cudnn6 instead.
 
 with the theano, using the package [NeuralModels](https://github.com/asheshjain399/NeuralModels) same as the paper.
 use the Model of theano, and install it with:
