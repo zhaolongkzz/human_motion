@@ -127,10 +127,13 @@ S-RNN架构来自st图的因子图表示。 st图中的因子以时间方式操�
   <img src="https://github.com/zhaolongkzz/human_motion/blob/master/images/rviz.gif"><br><br>
 </p>
 
-## FAQ
-**Q1**.the path is miss, and it will not run well?
+## LICENCE
+[MIT License](https://github.com/zhaolongkzz/human_motion/blob/master/LICENSE)
 
-**A1**:All the code is set by the premise of the scripts floder. So here you must change your dictionary to /scripts with your terminal, then it will get normal operation.
+## FAQ
+**Q1**.路径遗失，无法正常运行代码？
+
+**A1**:以上所有代码均处于scripts文件夹下，涉及到一些函数调用，正确运行代码，请根据本readme操作，将数据集和预处理文件下载到指定文件夹(根据结构章节的图命名)，或者修改代码相关路径。
 
 
 
