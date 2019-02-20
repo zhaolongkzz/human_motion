@@ -127,6 +127,9 @@ Structural-RNN make a connection between nodes and edges, and every one is train
   <img src="https://github.com/zhaolongkzz/human_motion/blob/master/images/rviz.gif"><br><br>
 </p>
 
+## LICENCE
+[MIT License](https://github.com/zhaolongkzz/human_motion/blob/master/LICENSE)
+
 ## FAQ
 **Q1**.the path is miss, and it will not run well?
 
