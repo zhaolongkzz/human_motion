@@ -65,7 +65,7 @@ rm h3.6m.zip
 # 从谷歌云下载预处理的数据集```
 ```
 
-**注意:**从谷歌云中下载的数据集, 需要放入scripts中新建命名为Pre-trained的文件夹.(h3.6m和Pre-train文件夹都放置于scripts文件夹下.)
+**注意**: 从谷歌云中下载的数据集, 需要放入scripts中新建命名为Pre-trained的文件夹.(h3.6m和Pre-train文件夹都放置于scripts文件夹下.)
 
 
 ### 使用python
