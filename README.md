@@ -1,10 +1,10 @@
 EN | [中文](https://github.com/zhaolongkzz/human_motion/blob/master/README_CN.md)
 
 # Overview of human motion
-Structural-RNN for human-motion prediction!
+Structural-RNN for human-motion prediction! The paper "Structural-RNN: Deep Learning on Spatio-Temporal Graphs".
 
 ## Summary
-Here I provide the code for [CVPR2015 Structural-RNN](https://arxiv.org/pdf/1511.05298.pdf), the original code of author is [here](http://asheshjain.org/srnn/).
+Here I provide the code for the paper [CVPR2015 Structural-RNN](https://arxiv.org/pdf/1511.05298.pdf), the original website of author is [here](http://asheshjain.org/srnn/).
 
 The work I have done is reproduce the paper, and make a animation from the result. And making a ROS topic to publish motion data,then a predicter to subscribe the data and predict the next motion from dataset. The code also get a TF animation in Rviz.
 
